@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="no1" type="number" placeholder="Nhập số thứ nhất">
+<input id="no2" type="number" placeholder="Nhập số thứ hai">
+<button onclick="cong()" type="submit">Cộng</button>
+<button onclick="tru()" type="submit">Trừ</button>
+<br>
+<p>Result:</p>
+<p id="result">Đây là kết quả</p>
+</body>
+</html>
+<script>
+    function cong() {
+        let no1 = +document.getElementById("no1").value
+        let no2 = +document.getElementById("no2").value
+        let cong_result = no1+no2
+        document.getElementById("result").innerHTML = cong_result
+
+    }
+    function tru() {
+        let no1 = +document.getElementById("no1").value
+        let no2 = +document.getElementById("no2").value
+        let tru_result = no1-no2
+        document.getElementById("result").innerHTML = tru_result
+
+    }
+</script>
